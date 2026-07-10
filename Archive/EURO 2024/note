@@ -1,0 +1,152 @@
+Missing Values :
+--------------------------------
+country_code                131
+name                          0
+name_shirt                 1261
+jersey_namber                 0
+position_national          1886
+position_field             2232
+position_field_detailed    4277
+country_birth              9452
+birth_date                    3
+id_match                      0
+id_player                     0
+start                         0
+year                          0
+start_position_x           8162
+start_position_y           8162
+height                     7983
+id_club                    7321
+weight                     8244
+id_national_team           8124
+
+
+Symbols : 
+-----------
+،     1166
+‡      743
+©      658
+¶      248
+±      210
+£      148
+-      139
+¸      137
+؛      108
+§      102
+¤       98
+™       95
+›       94
+‚       75
+«       65
+„       64
+¦       55
+–       52
+'       45
+°       37
+¯       36
+†       22
+®       22
+¨       22
+¢       20
+´       20
+‘       17
+‰       15
+…       11
+¥        6
+»        4
+½
+
+
+
+
+'
+-
+¢
+£
+¤
+¥
+¦
+§
+¨
+©
+«
+\xad
+®
+¯
+°
+±
+²
+³
+´
+¶
+¸
+»
+¼
+½
+¾
+Œ
+œ
+ƒ
+ˆ
+،
+أ
+ؤ 
+إ
+,
+ب
+پ
+,
+چ
+ڑ
+,
+ژ
+ک
+,
+گ
+ں
+\u200d
+‘
+„
+†
+؛
+‡
+…
+–
+‰
+‚
+›
+™
+-----------
+
+26.á / š
+27.ć
+28.é
+29.ö
+30.ű
+31.ã
+32.date sign doesnt matter
+33.ø
+34.ú
+35.ç
+36.ä
+37.tm
+38.ě
+39.ő
+40.ë
+41.ń
+42.æ
+43.Ö
+44.make it $ to not mess
+45.İ
+46.ů
+47.Ć
+48.î
+49.è
+50.Ţ
+51.ô
+52.ő
+53.É
+54.ą
+55.å
+56.Ż
+57.Ž

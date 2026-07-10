@@ -1,0 +1,357 @@
+Columns :       Missing Values :
+---------------------------------
+Date                        0
+Time                     1510
+Location                    4
+Operator                   10
+Flight #                 3652
+Route                     775
+AC Type                    15
+Registration              273
+cn/ln                     668
+Aboard                     18
+Aboard Passangers         229
+Aboard Crew               226
+Fatalities                  8
+Fatalities Passangers     242
+Fatalities Crew           241
+Ground                     41
+Summary                    64
+
+
+
+
+//////////////////////////////////////////
+
+
+
+
+You can check your system's maximum rows with the 
+
+print(pd.options.display.max_rows)
+
+df.dropna()
+
+print(new_df.to_string())
+
+Note: Now, the **dropna(inplace = True)** will NOT return a new DataFrame, but it will remove all rows containing NULL values from the original DataFrame.
+
+
+Replace NULL values with the number 130:
+
+df.fillna(130, inplace = True)
+or
+df.fillna({"Calories": 130}, inplace=True)
+
+
+
+
+Calculate the MEAN, and replace any empty values with it:
+
+x = df["Calories"].mean()
+df.fillna({"Calories": x}, inplace=True)
+
+x = df["Calories"].median()
+df.fillna({"Calories": x}, inplace=True)
+
+x = df["Calories"].mode()[0]
+df.fillna({"Calories": x}, inplace=True)
+
+
+
+
+Pandas has a to_datetime() method for this:
+
+
+
+df['Date'] = pd.to_datetime(df['Date'], format='mixed')
+
+
+
+
+
+Remove rows with a NULL value in the "Date" column:
+
+df.dropna(subset=['Date'], inplace = True)
+
+
+
+////////////////////////////////////////////
+
+
+
+--------------------------------------------
+1.🔥 A — كلمات أساسية + دوال Built-in
+--------------------------------------------
+print() – يطبع نص أو قيمة .
+input() – يأخذ إدخال من المستخدم .
+len() – يرجع طول سترنج/ليست .
+type() – يجيب نوع المتغير .
+int() – يحول لقيمة عدد صحيح .
+float() – يحول لرقم عشري .
+str() – يحول لسترنج .
+bool() – يحول لقيمة Boolean.
+list() – ينشئ ليست .
+tuple() – ينشئ تيوبل .
+set() – ينشئ ست .
+dict() – ينشئ قاموس .
+range() – يعمل range من الأرقام .
+sum() – يجمع أرقام ليست .
+max() – أكبر قيمة .
+min() – أصغر قيمة .
+abs() – القيمة المطلقة .
+round() – يقرب رقم .
+sorted() – يرتب ليست .
+reversed() – يعكس ليست/سترنج .
+enumerate() – يرجع index + value في لوب .
+zip() – يربط ليستات مع بعض .
+map() – يعمل فنكشن على كل عنصر .
+filter() – يعمل فلترة .
+all() – يرجع True لو كل العناصر True.
+any() – يرجع True لو أي عنصر True.
+dir() – يجيب كل الخصائص والدوال للكائن .
+help() – يجيب معلومات عن أي شيء .
+id() – يجيب عنوان المتغير في الذاكرة .
+open() – يفتح ملف .
+--------------------------------------------
+2.� B — كلمات أساسية في اللغة (Keywords)
+--------------------------------------------
+if – شرط .
+elif – شرط إضافي .
+else – حالة النهاية .
+for – لوب .
+while – لوب .
+break – يوقف اللوب .
+continue – يكمل للفة اللي بعدها .
+pass – ما يعملش حاجة (placeholder).
+def – تعريف فنكشن .
+return – يرجع قيمة من فنكشن .
+class – تعريف كلاس .
+import – استيراد مكتبة .
+from – استيراد جزء من مكتبة .
+as – إعادة تسمية import.
+try – بداية بلوك تجربة .
+except – في حالة الخطأ .
+finally – يتنفّذ بكل الأحوال .
+raise – يرمي خطأ يدويًا .
+with – إدارة سياق (context manager).
+lambda – دالة صغيرة بدون اسم .
+global – تعديل متغير global.
+nonlocal – تعديل متغير في scope خارجي .
+assert – تأكيد شرط .
+del – حذف متغير .
+yield – يستخدم في generators.
+async – دالة غير متزامنة .
+await – انتظار async.
+--------------------------------------------
+3.� C — أوامر على السترنج (String Methods)
+--------------------------------------------
+s.upper() – يحول لحروف كبيرة .
+s.lower() – يحول لصغيرة .
+s.title() – أول حرف كبير .
+s.capitalize() – أول حرف كبير بس .
+s.strip() – يشيل المسافات .
+s.lstrip() – يشيل من الشمال .
+s.rstrip() – يشيل من اليمين .
+s.replace(a,b) – يستبدل نص .
+s.split() – يقسم النص ليست .
+s.join(list) – يجمع ليست لسترنج .
+s.startswith() – يبدأ ب ؟
+s.endswith() – ينتهي ب ؟
+s.find() – يبحث ويرجع index.
+s.index() – زي find بس يعمل error لو مش موجود .
+s.count() – يعد تكرار كلمة .
+s.isdigit() – هل كله أرقام؟
+s.isalpha() – هل كله حروف؟
+s.isalnum() – حروف + أرقام؟
+s.isupper() – كله capital؟
+s.islower() – كله small؟
+s.center() – يوسّط النص .
+s.swapcase() – يقلب الحروف )كبير ↔ صغير( .
+--------------------------------------------
+4.� D — أوامر على الليست (List Methods)
+--------------------------------------------
+lst.append(x) – يضيف عنصر آخر الليست .
+lst.extend(list2) – يضيف ليست كاملة .
+lst.insert(i,x) – يضيف في index معين .
+lst.remove(x) – يشيل أول ظهور ل x.
+lst.pop() – يحذف آخر عنصر ويرجعه .
+lst.clear() – يمسحها كلها .
+lst.sort() – يرتبها .
+lst.reverse() – يعكسها .
+lst.copy() – يعمل نسخة .
+lst.count() – عدد تكرار قيمة .
+lst.index() – يجيب Index لقيمة .
+--------------------------------------------
+5.� E — قاموس (Dictionary Methods)
+--------------------------------------------
+d.keys() – مفاتيح الدكشنري .
+d.values() – قيم الدكشنري .
+d.items() – مفتاح + قيمة .
+d.get(key) – يجيب قيمة بأمان .
+d.update() – تحديث أو إضافة .
+d.pop(key) – حذف قيمة .
+d.popitem() – يحذف آخر عنصر .
+d.clear() – يمسح كله .
+d.setdefault() – قيمة افتراضية لو المفتاح مش موجود .
+--------------------------------------------
+6.� F — أوامر على ال set
+--------------------------------------------
+s.add() – إضافة عنصر .
+s.remove() – حذف عنصر (يعمل error لو مش موجود ).
+s.discard() – حذف بدون error.
+s.pop() – حذف عنصر عشوائي .
+s.clear() – يمسح المجموعة .
+s.union() – اتحاد .
+s.intersection() – تقاطع .
+s.difference() – فرق .
+s.symmetric_difference() – فرق غير متماثل .
+--------------------------------------------
+7.� G — File Handling
+--------------------------------------------
+open('file.txt') – فتح ملف .
+f.read() – قراءة كل الملف .
+f.readline() – قراءة سطر .
+f.readlines() – يرجع ليست فيها كل السطور .
+f.write() – كتابة للملف .
+f.writelines() – يكتب ليست للملف .
+f.close() – إغلاق الملف .
+--------------------------------------------
+8.🔢 H — Math
+--------------------------------------------
+import math
+math.sqrt() – جذر تربيعي .
+math.pow() – أس.
+math.floor() – تقفيل تحت .
+math.ceil() – تقفيل فوق .
+math.pi – قيمة π.
+math.sin() – جيب .
+math.cos() – جيب تمام .
+math.tan() – ظل .
+--------------------------------------------
+9.🔥 I — Random
+--------------------------------------------
+import random
+random.random() – رقم بين 0 و 1 .
+random.randint(a,b) – رقم عشوائي .
+random.choice(list) – اختيار عنصر .
+random.shuffle(list) – يلخبط ليست .
+random.sample(list,k) – ياخد عيّنة .
+--------------------------------------------
+10. 🔗 J — OS
+--------------------------------------------
+import os
+os.listdir() – يجيب ملفات فولدر .
+os.getcwd() – مسار التشغيل .
+os.chdir() – تغيير المسار .
+os.mkdir() – إنشاء فولدر .
+os.remove() – حذف ملف .
+--------------------------------------------
+11. ⚙� K — Time
+--------------------------------------------
+import time
+time.sleep(x) – وقف البرنامج x ثواني .
+time.time() – الوقت الحالي بالثواني .
+time.ctime() – وقت مقروء .
+--------------------------------------------
+12. 📦 L — Useful Built-in Functions
+--------------------------------------------
+format() – تنسيق نص .
+bin() – يحول لثنائي .
+hex() – يحول لهيكس .
+oct() – يحول ل octal.
+eval() – ينفذ نص ككود .
+exec() – ينفذ كود كامل .
+compile() – يحول نص لكود .
+--------------------------------------------
+13. � M — OOP Related
+--------------------------------------------
+__init__() – constructor.
+__str__() – تمثيل نصي .
+__len__() – طول الكائن .
+__call__() – استدعاء الكائن كفنكشن .
+__getitem__() – الوصول بعنصر .
+__setitem__() – تعديل عنصر .
+__delitem__() – حذف عنصر .
+--------------------------------------------
+14. � N — Errors
+--------------------------------------------
+ValueError
+TypeError
+IndexError
+KeyError
+ZeroDivisionError
+ImportError
+FileNotFoundError
+AttributeError
+--------------------------------------------
+15. 🌐 O — Networking (very basic)
+--------------------------------------------
+import socket
+socket.socket() – إنشاء socket.
+s.connect() – اتصال .
+s.send() – إرسال بيانات .
+s.recv() – استقبال بيانات .
+--------------------------------------------
+16. � P — Debugging
+--------------------------------------------
+print() – debugging أساسي .
+assert condition – يوقف لو الشرط غلط .
+--------------------------------------------
+17. � Q — Itertools
+--------------------------------------------
+itertools.count() – عداد لا نهائي .
+itertools.cycle() – تكرار عناصر ليست .
+itertools.product() – كل التراكيب الممكنة .
+itertools.permutations() – ترتيب العناصر .
+--------------------------------------------
+18. 🔥 R — JSON
+--------------------------------------------
+import json
+json.dumps() – تحويل dict إلى JSON.
+json.loads() – تحويل JSON إلى dict.
+json.dump() – حفظ JSON في ملف .
+json.load() – قراءة JSON من ملف .
+--------------------------------------------
+19. 📁 S — Sys
+--------------------------------------------
+import sys
+sys.argv – قراءة arguments من CLI.
+sys.exit() – انهاء البرنامج .
+--------------------------------------------
+20. 🔐 T — Hashing
+--------------------------------------------
+import hashlib
+hashlib.md5() – هاش .
+hashlib.sha256() – هاش أقوى .
+--------------------------------------------
+21. 📦 U — Statistics
+--------------------------------------------
+import statistics
+statistics.mean() – متوسط .
+statistics.median() – الوسيط .
+statistics.mode() – الوضع .
+--------------------------------------------
+22. � V — Dataclasses
+--------------------------------------------
+from dataclasses import dataclass
+@dataclass – يعمل كلاس جاهز بدون مجهود .
+--------------------------------------------
+23. 📚 W — Typing
+--------------------------------------------
+from typing import List
+List[int] – نوع ليست من أرقام .
+Optional[] – قيمة ممكن تكون None.
+Dict[] – قاموس بأنواع .
+--------------------------------------------
+24. � X — Multithreading
+--------------------------------------------
+import threading
+t = threading.Thread() – إنشاء ثريد .
+t.start() – تشغيل الثريد .
+t.join() – انتظار الثريد .
+--------------------------------------------
+25. 🚀 Y — Datetime
+--------------------------------------------
+import datetime
+datetime.datetime.now() – التاريخ والوقت الحالي .
