@@ -1,0 +1,40 @@
+----- Convert -----
+
+1. [INDICATOR] (Drug overdose death rates) >> (DODR)
+
+2. [PANEL] (All drug overdose deaths) >> (ADOD)
+
+3. [PANEL] (Drug overdose deaths involving any opioid) >> (DODIO)
+
+4. [PANEL] (Drug overdose deaths involving heroin) >> (DODIH)
+
+5. [PANEL] (Drug overdose deaths involving methadone) >> (DODIM)
+
+6. [PANEL] (Drug overdose deaths involving natural and semisynthetic opioids) >> (DODINSO)
+
+7. [PANEL] (Drug overdose deaths involving other synthetic opioids (other than methadone)) >> (DODISO ! OTM)
+
+8. [PANEL_NUM] (0,1,2,3,4,5) >> (1,2,3,4,5,6)
+
+9. [UNIT] (Deaths per 100,000 resident population, crude) >> (DP100K/RP/CRD)
+
+10. [UNIT] (Deaths per 100,000 resident population, age-adjusted) >> (DP100K/RP/AGE-ADJ)
+
+
+
+11. make column for age range explaination discripted <----------------
+
+
+
+
+Under 15
+15-24
+25-34
+35-44
+45-54
+55-64
+65-74
+75-84
+85 and over
+
+

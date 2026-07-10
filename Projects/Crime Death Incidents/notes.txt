@@ -1,0 +1,320 @@
+CNN : 
+
+SHIFT :
+EVENING     763
+DAY         607
+MIDNIGHT    254
+
+METHOD :
+OTHERS    1507
+GUN         88
+KNIFE       29
+
+OFFENSE : 
+THEFT/OTHER                   884
+THEFT F/AUTO                  285
+MOTOR VEHICLE THEFT           192
+ROBBERY                       104
+ASSAULT W/DANGEROUS WEAPON     84
+BURGLARY                       58
+SEX ABUSE                      10
+HOMICIDE                        7
+
+BLOCK :
+
+XBLOCK :
+
+YBLOCK :
+
+WARD : 
+2    306
+1    243
+6    228
+5    221
+8    183
+7    176
+4    144
+3    123
+
+ANC :
+2C      80
+1B      79
+2E      73
+5D      67
+2B      64
+5C      63
+6D      56
+1C      51
+6E      50
+7C      48
+1A      48
+8E      44
+7D      42
+4B      42
+6C      42
+7F      41
+8C      41
+1E      40
+6B      37
+5F      35
+4A      35
+6A      34
+2F      32
+3F      31
+8F      30
+8A      29
+8D      27
+3C      27
+1D      26
+2A      25
+4C      25
+7B      25
+2G      25
+3E      24
+8B      21
+4D      21
+5B      20
+4E      20
+7E      20
+5A      19
+3A      17
+5E      16
+3/4G    11
+3D       8
+2D       7
+3B       6
+
+DISTRICT :
+2    350
+3    291
+5    237
+1    236
+4    199
+6    159
+7    147
+
+PSA :
+206    72
+305    69
+208    63
+207    61
+302    53
+501    52
+303    51
+106    48
+503    43
+507    43
+203    40
+104    39
+103    35
+204    35
+401    34
+404    33
+704    32
+603    32
+301    31
+209    31
+506    31
+502    31
+602    30
+107    29
+402    27
+608    27
+307    26
+308    24
+102    23
+706    23
+202    22
+108    22
+505    22
+105    21
+406    21
+604    20
+708    20
+306    20
+403    20
+703    19
+101    19
+409    18
+607    18
+405    18
+304    17
+705    16
+504    15
+408    15
+605    14
+201    13
+205    13
+407    13
+707    13
+702    12
+701    12
+601    11
+606     7
+
+NEIGHBORHOOD_CLUSTER :
+Cluster 25    114
+Cluster 2     107
+Cluster 8      94
+Cluster 3      90
+Cluster 6      83
+Cluster 4      73
+Cluster 23     70
+Cluster 18     63
+Cluster 39     60
+Cluster 1      58
+Cluster 9      55
+Cluster 22     53
+Cluster 17     52
+Cluster 7      52
+Cluster 26     52
+Cluster 21     48
+Cluster 31     43
+Cluster 38     43
+Cluster 34     31
+Cluster 27     30
+Cluster 32     30
+Cluster 33     27
+Cluster 15     27
+Cluster 24     26
+Cluster 12     24
+Cluster 11     23
+Cluster 19     23
+Cluster 14     23
+Cluster 5      20
+Cluster 10     18
+Cluster 30     18
+Cluster 36     14
+Cluster 37     13
+Cluster 16     12
+Cluster 28     11
+Cluster 20     11
+Cluster 13      9
+Cluster 35      7
+Cluster 43      5
+Cluster 40      4
+Cluster 45      3
+Cluster 29      3
+Cluster 46      1
+Cluster 44      1
+
+BLOCK_GROUP :
+
+CENSUS_TRACT :
+102      39
+5802     34
+11100    34
+3500     32
+10100    31
+         ..
+1301      1
+3301      1
+9604      1
+11002     1
+9903      1
+
+VOTING_PRECINCT :
+
+LATITUDE :
+
+LONGITUDE :
+
+BID :
+DOWNTOWN                     72
+GEORGETOWN                   48
+NOMA                         40
+SOUTHWEST                    36
+CAPITOL RIVERFRONT           35
+ADAMS MORGAN                 33
+CAPITOL HILL                 24
+GOLDEN TRIANGLE              18
+DUPONT CIRCLE                17
+MOUNT VERNON TRIANGLE CID    14
+ANACOSTIA                     6
+FRIENDSHIP HEIGHTS            3
+
+
+START_DATE :
+
+END_DATE :
+
+REPORT_DAT :
+-------------------------------------
+Missing values in each column ::
+BID            --       1278  
+PSA            --          5  
+DISTRICT       --          5  
+SHIFT                      0
+CCN                        0
+BLOCK                      0
+OFFENSE                    0
+METHOD                     0
+XBLOCK                     0
+ANC                        0
+WARD                       0
+NEIGHBORHOOD_CLUSTER       0
+YBLOCK                     0
+BLOCK_GROUP                0
+CENSUS_TRACT               0
+LATITUDE                   0
+VOTING_PRECINCT            0
+LONGITUDE                  0
+START_DATE                 0
+END_DATE                   0
+REPORT_DAT                 0
+-------------------------------------------------------------------------------
+BID based on [NEIGHBORHOOD_CLUSTER PSA DISTRICT  ANC  WARD columns] ::
+
+NEIGHBORHOOD_CLUSTER  PSA  DISTRICT  ANC  WARD  BID
+
+Cluster 1             303  3         1C   1     ADAMS MORGAN                 33
+                                                DUPONT CIRCLE                 4
+-------------------------------------------------------------------------------
+Cluster 11            202  2         3E   3     FRIENDSHIP HEIGHTS            2
+-------------------------------------------------------------------------------
+Cluster 21            501  5         5F   5     NOMA                          1
+                      502  5         5F   5     NOMA                          6
+-------------------------------------------------------------------------------
+Cluster 23            501  5         5F   5     NOMA                          4
+-------------------------------------------------------------------------------
+Cluster 25            102  1         6C   6     CAPITOL HILL                  3
+                      108  1         6C   6     CAPITOL HILL                  3
+                      501  5         6C   6     NOMA                          7
+                                     6E   6     NOMA                         21
+-------------------------------------------------------------------------------
+Cluster 26            106  1         6B   6     CAPITOL HILL                  7
+                      107  1         6B   6     CAPITOL HILL                  8
+                      108  1         6C   6     CAPITOL HILL                  2
+-------------------------------------------------------------------------------
+Cluster 27            106  1         8F   6     CAPITOL RIVERFRONT            9
+                                          8     CAPITOL RIVERFRONT           21
+-------------------------------------------------------------------------------
+Cluster 28            701  7         8A   8     ANACOSTIA                     3
+-------------------------------------------------------------------------------
+Cluster 37            703  7         8A   8     ANACOSTIA                     2
+                                     8C   8     ANACOSTIA                     1
+-------------------------------------------------------------------------------
+Cluster 4             206  2         2E   2     GEORGETOWN                   47
+-------------------------------------------------------------------------------
+Cluster 45            102  1         6C   6     CAPITOL HILL                  1
+-------------------------------------------------------------------------------
+Cluster 5             207  2         2A   2     GOLDEN TRIANGLE               1
+-------------------------------------------------------------------------------
+Cluster 6             207  2         2A   2     GOLDEN TRIANGLE               3
+                                     2C   2     GOLDEN TRIANGLE              10
+                                                DOWNTOWN                      3
+                      208  2         2B   2     DUPONT CIRCLE                13
+                                                GOLDEN TRIANGLE               4
+                                     2C   2     DOWNTOWN                      1
+-------------------------------------------------------------------------------
+Cluster 8             101  1         2C   2     DOWNTOWN                      5
+                                     6E   6     MOUNT VERNON TRIANGLE CID    14
+                      102  1         2C   2     DOWNTOWN                      4
+                                     6E   6     DOWNTOWN                      3
+                                                NOMA                          1
+                      207  2         2C   2     DOWNTOWN                     24
+                      209  2         2C   2     DOWNTOWN                     31
+-------------------------------------------------------------------------------
+Cluster 9             103  1         6D   6     SOUTHWEST                    32
+                      105  1         6D   6     CAPITOL RIVERFRONT            5
+                                                SOUTHWEST                     3
