@@ -4,7 +4,7 @@ import re
 import plotly.express as px
 import streamlit as st
 
-st.set_page_config(page_title=' Dashboard', page_icon='', layout='wide', initial_sidebar_state='expanded')
+st.set_page_config(page_title='Dashboard', page_icon='', layout='wide', initial_sidebar_state='expanded')
 
 st.title('Crime Death Incidents')
 data = pd.read_excel(os.path.join(os.path.dirname(__file__), "crime_data.xlsx"))
