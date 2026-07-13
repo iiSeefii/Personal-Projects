@@ -3,11 +3,15 @@ import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
 
+from pathlib import Path
+
 # ---------------- Page Config ----------------
 st.set_page_config(page_title="Drug Dashboard", layout='wide', initial_sidebar_state='expanded')
 
 # ---------------- Read Data ----------------
-data = pd.read_excel("Drug_data_cleaned.xlsx")
+BASE_DIR = Path(__file__).resolve().parent
+excel_file = BASE_DIR / "Drug_data_cleaned.xlsx"
+data = pd.read_excel(excel_file)
 
 st.title("Drug Dashboard")
 
