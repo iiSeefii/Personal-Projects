@@ -71,10 +71,12 @@ The app will open automatically in your browser at `http://localhost:8501`.
 ## 📁 Project Structure
 
 ```
-.
-├── Dashboard.py              # Main Streamlit app
-├── requirements.txt          # Python dependencies
-├── crime_data_cleaned.xlsx   # Dataset (not included — see Dataset section)
+Crime_Death_Incidents/
+├── Dashboard.py                                  # Main Streamlit app
+├── requirements.txt                               # Python dependencies
+├── Crime_Incidents.ipynb                          # Data cleaning & feature engineering notebook
+├── crime_data_cleaned.xlsx                        # Cleaned dataset used by the dashboard
+├── Crime_Incidents_in_the_Last_30_Days.xlsx        # Supplementary/raw data
 └── README.md
 ```
 
